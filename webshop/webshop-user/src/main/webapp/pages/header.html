@@ -1,0 +1,13 @@
+<div class="headerClass">
+	<table class="header">
+		<tr>
+			<td align="right"><h1>
+					{{translation.WelocmeMessage}}
+				</h1></td>
+				<td style="padding-left: 10px;"><div class="loginDiv">
+					<div ng-show="userLoggedIn !=null">Welcome &nbsp;{{userLoggedIn.firstName}}&nbsp;&nbsp;<a href="#/home">{{translation.LBL_HOME}}</a></div>
+					<div ng-show="userLoggedIn ==null"><a href="#/login">{{translation.BTN_LOGIN}}</a>&nbsp;&nbsp;<a href="#/register">{{translation.BTN_REGISTER}}</a></div>
+				</div></td>
+		</tr>
+	</table>
+</div>

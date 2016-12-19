@@ -1,0 +1,45 @@
+<div data-ng-init="initilizeCategory()">
+	<form name="productForm" ng-submit="editProduct()" role="form"
+		style="padding-left: 100px;">
+		<h2>{{translation.LBL_PRD_SCREEN_HEADING}}</h2>
+		<div style="margin-bottom: 10px;" class="form-group">
+			<table class="productPanel">
+				<tr>
+					<td><label for="productname">{{translation.LBL_PRDNAME}}</label></td>
+					<td><input id="productname" name="productname" ng-model="newProduct.productName" class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="category">{{translation.LBL_CATEGORY}}:</label></td>
+					<td>
+					<select class="form-control" ng-model="selectedCategory" ng-options="categoryObj as categoryObj.categoryName for categoryObj in categoriesList"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="brand">{{translation.LBL_BRAND}}:</label></td>
+					<td><input id="brand" name="brand" ng-model="newProduct.brand"
+						class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="price">{{translation.LBL_PRICE}}:</label></td>
+					<td><input id="price" name="price" ng-model="newProduct.price"
+						class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="discount">{{translation.LBL_DISCOUNT}}:</label></td>
+					<td><input id="discount" name="discount"
+						ng-model="newProduct.discount" class="form-control" required /></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button type="submit" id="addProduct"
+				class="btn btn-info">{{translation.BTN_SAVE}}</button>
+		</div>
+	</form>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div>
+	<form name="loginForm" ng-submit="login()" role="form"
+		style="padding-left: 100px;">
+		<h2>{{translation.LBL_USERLOGIN}}</h2>
+		<div id="panel" style="margin-bottom: 10px; width: 400px;">
+			<table>
+				<tr>
+					<td><label for="username">{{translation.ENTER_USERNAME}}</label> <input
+						id="username" name="userName" ng-model="username" class="form-control" required /></td>
+				</tr>
+				<tr>
+					<td><label for="password">{{translation.ENTER_PASSWORD}}</label> <input
+						type="password" id="password" value="password" ng-model="password" class="form-control" required /></td>
+				</tr>
+			</table>
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary">{{translation.BTN_LOGIN}}</button>
+		</div>
+	</form>
+</div>
+

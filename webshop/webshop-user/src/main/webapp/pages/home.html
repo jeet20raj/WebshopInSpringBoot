@@ -1,0 +1,32 @@
+<div>
+	<table>
+		<tr>
+			<td class="homePageLeftPanel"><a href="#/addCategory">{{translation.BTN_ADDCATEGORY}}</a><br>
+				<a href="#/addProduct">{{translation.BTN_ADDPRODUCT}}</a></td>
+			<td style="padding-left: 350px;">
+				<div style="margin-bottom: 10px;">
+					<h2>{{translation.LBL_PRDLIST}}</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div ng-show='itemsList.length > 0'><a href="#/viewCarts">{{translation.LBL_VIEWCARTS}}</a></div>
+					<table class="table table-bordered table-striped homePageDataTable">
+						<tr class="info">
+							<th>{{translation.LBL_NAME}}</th>
+							<th>{{translation.LBL_CATEGORY}}</th>
+							<th>{{translation.LBL_BRAND}}</th>
+							<th>{{translation.LBL_PRICE}}</th>
+							<th>{{translation.LBL_DISCOUNT}}</th>
+							<th></th>
+						</tr>
+						<tr ng-repeat="product in productsList">
+							<td>{{product.productName}}</td>
+							<td>{{product.categoryEntity.categoryName}}</td>
+							<td>{{product.brand}}</td>
+							<td>{{product.price}}</td>
+							<td>{{product.discount}}</td>
+							<td style="white-space: nowrap;"><a href="" ng-click="addToCart(product.productId)">{{translation.LBL_ADDTOCART}}</a></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

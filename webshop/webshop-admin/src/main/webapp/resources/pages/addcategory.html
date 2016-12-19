@@ -1,0 +1,24 @@
+<div>
+	<form name="categoryForm" ng-submit="createCategory()" role="form"
+		style="padding-left: 100px;">
+		<h2>{{translation.LBL_CAT_SCREEN_HEADING}}</h2>
+		<div style="margin-bottom: 10px;">
+			<table class="categoryPanel">
+				<tr>
+					<td><label for=categoryName>{{translation.LBL_CATEGORYNAME}}</label></td>
+					<td><input id="categoryName" name="categoryName" ng-model="category.categoryName" class="form-control" required /></td>
+				</tr>
+				<tr>
+					<td><label for="description">{{translation.LBL_DESCRIPTION}}</label></td>
+					<td><input id="description" name="description" ng-model="category.description" class="form-control" required /></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button type="submit" id="addCategory"
+				class="btn btn-info">{{translation.BTN_SAVE}}</button>
+		</div>
+	</form>
+</div>
+
+

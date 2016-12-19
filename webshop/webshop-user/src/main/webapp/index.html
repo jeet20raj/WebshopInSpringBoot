@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userapp">
+<head>
+<title>Pet Supplies webshop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+	content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/webshop-style.css" type="text/css" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/lib/angular.js"></script>
+<script src="js/lib/angular-route.js"></script>
+<script src="js/lib/angular-resource.js"></script>
+<!-- <script	src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate/2.7.1/angular-translate.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script>
+<script src="js/app/userapp.js"></script>
+<script src="js/app/cart.js"></script>
+<script src="js/app/factorymodule.js"></script>
+<script src="js/app/usercontroller.js"></script>
+<script src="js/app/userservice.js"></script>
+<script src="js/app/orderservice.js"></script>
+<script src="js/app/productcontroller.js"></script>
+<script src="js/app/shoppingcontroller.js"></script>
+<script src="js/app/homecontroller.js"></script>
+<script src="js/app/productservice.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading" ng-include="'pages/header.html'"></div>
+			<div class="panel-body contentClassJS" ng-view></div>
+			<div class="panel-footer navbar-fixed-bottom"
+				ng-include="'pages/footer.html'"></div>
+		</div>
+	</div>
+<body>
+</html>
+

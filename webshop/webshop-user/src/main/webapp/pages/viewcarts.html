@@ -1,0 +1,26 @@
+<div>
+	<table>
+		<tr>
+			<td style="padding-left: 350px;">
+				<div style="margin-bottom: 10px;">
+					<h2>{{translation.LBL_ITEMS_LIST}}</h2>
+					<table class="table table-bordered table-striped homePageDataTable">
+						<tr class="info">
+							<th>{{translation.LBL_NAME}}</th>
+							<th>{{translation.LBL_QUANTITY}}</th>
+							<th>{{translation.LBL_TOTALPRICE}}</th>
+						</tr>
+						<tr ng-repeat="item in itemsList">
+							<td>{{item.productName}}</td>
+							<td>{{item.quantity}}</td>
+							<td>{{item.productPrice}}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form-actions">
+					<button type="button" ng-click="placeOrder()" class="btn btn-primary">{{translation.LBL_PLACEORDER}}</button>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

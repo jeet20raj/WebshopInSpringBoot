@@ -1,0 +1,116 @@
+div.headerClass {
+	background-color: #A9D0F5;
+}
+
+div.footerClass {
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background-color: #A9D0F5;
+	width: 100%;
+}
+
+div.contentClass {
+	background-color: #81F7F3;
+	height: 510px;
+}
+
+div.contentClassJS {
+	background-color: #81F7F3;
+}
+
+table.footer {
+	width: 100%;
+}
+
+table.header {
+	width: 100%;
+}
+
+table.adminHome {
+	padding-top: 30px;
+}
+
+h1.footer {
+	align: center;
+}
+
+div.adminHomeDiv {
+	padding-top: 30px;
+}
+
+div.loginDiv {
+	float: right;
+	padding-right: 10px;
+}
+
+.homePageLeftPanel {
+	padding-left: 20px;
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+td.loginPanel {
+	padding-left: 10px;
+}
+
+.ui-datatable {
+	width: 800px;
+	padding-left: 100px;
+	padding-top: 10px;
+}
+
+table.categoryPanel {
+	border-collapse: collapse;
+}
+
+table.categoryPanel td {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+table.productPanel {
+	border-collapse: collapse;
+}
+
+table.productPanel td {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+div.container {
+	height: 100%;
+}
+
+div.panel {
+	height: 100%;
+}
+
+div.panel-body {
+	height: 100%;
+	padding-bottom: 55px;
+	width: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+	background-color: #FFFFFF;
+}
+
+.homePageDataTable {
+	width: 600px;
+	text-align: center;
+}
+
+/* div.container {
+	margin: 0 auto;
+	width: 100%;
+} */
+
+/* div.panel-body {
+	height: 472px;
+} */

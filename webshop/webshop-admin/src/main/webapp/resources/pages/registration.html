@@ -1,0 +1,51 @@
+<div>
+	<form name="registrationForm" ng-submit="register()" role="form"
+		style="padding-left: 100px;">
+		<h2>User Registration</h2>
+		<div style="margin-bottom: 10px;">
+			<table>
+				<tr>
+					<td><label for="userName">{{translation.LBL_USERNAME}}</label></td>
+					<td><input id="userName" name="userName"
+						ng-model="newMember.userName" class="form-control" required
+						ng-minlength="5" ng-maxlength="10" /> <span
+						ng-show="registrationForm.userName.$error.required">Your
+							username is required.</span> <span
+						ng-show="registrationForm.userName.$error.minlength">Username
+							is too short.</span> <span
+						ng-show="registrationForm.userName.$error.maxlength">Username
+							is too long.</span></td>
+				</tr>
+
+				<tr>
+					<td><label for="firstName">{{translation.LBL_FIRSTNAME}}</label></td>
+					<td><input id="firstName" name="firstName"
+						ng-model="newMember.firstName" class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="lastName">{{translation.LBL_LASTNAME}}</label></td>
+					<td><input id="lastName" name="lastName"
+						ng-model="newMember.lastName" class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="password">{{translation.LBL_PASSWORD}}</label></td>
+					<td><input id="password" name="password"
+						ng-model="newMember.password" class="form-control" required /></td>
+				</tr>
+
+				<tr>
+					<td><label for="confirmPassword">{{translation.LBL_CNFPASSWORD}}</label></td>
+					<td><input id="confirmPassword" name="confirmPassword"
+						ng-model="newMember.confirmPassword" class="form-control" required /></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button type="submit" id="registration" class="btn btn-primary">{{translation.BTN_REGISTER}}</button>
+		</div>
+	</form>
+</div>
+
+
