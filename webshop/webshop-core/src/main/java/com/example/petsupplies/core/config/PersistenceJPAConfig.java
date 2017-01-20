@@ -35,7 +35,7 @@ public class PersistenceJPAConfig{
 	        bean.setDataSource(dataSource());
 	        final Properties props = new Properties();
 	        props.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-	        props.setProperty("hibernate.hbm2ddl.auto", "validate");
+	        props.setProperty("hibernate.hbm2ddl.auto", "create");
 	        props.setProperty("hibernate.show_sql", "true");
 	        props.setProperty("hibernate.format_sql", "true");
 	        bean.setJpaProperties(props);

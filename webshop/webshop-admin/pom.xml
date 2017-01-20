@@ -20,10 +20,17 @@
 		<finalName>webshop-admin</finalName>
 		<plugins>
 			<plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.1.0.Beta1</version>
-            </plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.0.2.Final</version>
+				<configuration>
+					<filename>webshop-admin.war</filename>
+					<hostname>localhost</hostname>
+					<port>9990</port>
+					<username>jerajput</username>
+					<password>Jeet15r@j</password>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
